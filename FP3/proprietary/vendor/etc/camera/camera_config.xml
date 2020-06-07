@@ -84,7 +84,8 @@ LensInfo : Information of the lens present in the module.
 -->
 
 <CameraConfigurationRoot>
-    <CameraModuleConfig>
+<!-- //[8901][Camera] Add for Main Camera imx363 2nd source driver Frank Cheng 20191228 S-->
+  <CameraModuleConfig>
     <CameraId>0</CameraId>
     <SensorName>imx363_2nd</SensorName>
     <FlashName>pmic</FlashName>
@@ -109,6 +110,8 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+<!-- //[8901][Camera] Add for Main Camera imx363 2nd source driver Frank Cheng 20191228 E-->
+<!-- //[8901][Camera] Add for Main Camera imx363 driver Person 20190403 S-->
   <CameraModuleConfig>
     <CameraId>0</CameraId>
     <SensorName>imx363</SensorName>
@@ -134,6 +137,35 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+<!-- //[8901][Camera] Add for Main Camera imx363 driver Person 20190403 E-->  
+<!-- //[8901][Camera] Add for Main Camera imx486 driver Person 20181130 S-->
+  <CameraModuleConfig>
+    <CameraId>0</CameraId>
+    <SensorName>imx486</SensorName>
+    <ChromatixName>imx486_chromatix</ChromatixName>
+    <ActuatorName>lc898219</ActuatorName>
+    <FlashName>pmic</FlashName>
+    <EepromName>tsp_imx486_fm24c64</EepromName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>3.84</FocalLength>
+      <FNumber>1.8</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>78.7</HorizontalViewAngle>
+      <VerticalViewAngle>51.6</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+<!-- //[8901][Camera] Add for Main Camera imx486 driver Person 20181130 S  -->
+<!-- //<2018/10/18-Yuting Shih.[FAIRPHONE][MISC][COMMON][CAMERA][][]Add new front camera device driver S5K4H7YX. -->
   <CameraModuleConfig>
     <CameraId>2</CameraId>
     <SensorName>s5k4h7yx</SensorName>
@@ -160,4 +192,5 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+<!-- //>2018/10/18-Yuting Shih.[FAIRPHONE][MISC][COMMON][CAMERA][][]. -->
 </CameraConfigurationRoot>
